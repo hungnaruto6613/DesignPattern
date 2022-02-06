@@ -43,12 +43,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Builder\BuilderExercise.cs" />
+    <Compile Include="Builder\FacetedBuilder.cs" />
+    <Compile Include="Builder\FluentBuilder.cs" />
+    <Compile Include="Builder\FunctionalBuilder.cs" />
     <Compile Include="Builder\HtmlElement.cs" />
+    <Compile Include="Builder\StepwiseBuilder.cs" />
+    <Compile Include="Factory\AbstractFactory.cs" />
+    <Compile Include="Factory\FactoryExercise.cs" />
+    <Compile Include="Factory\FactoryMethod.cs" />
+    <Compile Include="Factory\FactoryPattern.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
