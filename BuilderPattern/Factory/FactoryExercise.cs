@@ -21,10 +21,12 @@ namespace BuilderPattern.Factory
             this.Name = name;
             this.Id = id;
         }
+
         public string GetName()
         {
             return Name;
         }
+
         public override string ToString()
         {
             return $"Name: {Name}, Id: {Id}";

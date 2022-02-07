@@ -1,6 +1,7 @@
-﻿using BuilderPattern.Builder;
-using BuilderPattern.Factory;
+﻿
+using DesignPattern.OOP;
 using System;
+using System.Collections.Generic;
 
 namespace BuilderPattern
 {
@@ -56,18 +57,43 @@ namespace BuilderPattern
             //Console.WriteLine(animalFactory.CreateAnimal().GetName());
             //Console.WriteLine(animalFactory.CreateAnimal().GetName());
 
-            // FactoryPattern
+            //// FactoryPattern
             //IAnimalsFactory animals;
             //animals = new AbstractFourLegsAnimalFactory();
             //Console.WriteLine(animals.CreateAnimal().GetName());
 
             //animals = new AbstractTwoLegsAnimalFactory();
             //Console.WriteLine(animals.CreateAnimal().GetName());
-            IPersonFactory personFactory = new PersonFactory();
-            var person1 = personFactory.CreatePerson("Hung");
-            var person2 = personFactory.CreatePerson("Chuot");
-            Console.WriteLine(person1.ToString());
-            Console.WriteLine(person2.ToString());
+            //IPersonFactory personFactory = new PersonFactory();
+            //var person1 = personFactory.CreatePerson("Hung");
+            //var person2 = personFactory.CreatePerson("Chuot");
+            //Console.WriteLine(person1.ToString());
+            //Console.WriteLine(person2.ToString());
+
+            //// Prototype pattern
+            //var employee = new Employee(new string[] { "Hung", "Khung" }
+            //, new Address("Konoha", 12)
+            //, 1000000000);
+
+            //var otherEmployee = new Employee();
+            //otherEmployee.Address = new Address("Konoha 1", 12);
+            //otherEmployee.Names = new string[] { "Hung 1", "Khung 1" };
+            //otherEmployee.Salary = 20000;
+
+            //var clonedEmployee = otherEmployee.DeepCopy();
+            //clonedEmployee.Names = new string[] { "chuot 1", "sida 1" };
+            //clonedEmployee.Salary = 12312313;
+            //clonedEmployee.Address = new Address("lang la 1", 32);
+            //Console.WriteLine(employee.ToString());
+            //Console.WriteLine(otherEmployee.ToString());
+            //Console.WriteLine(clonedEmployee.ToString());
+
+            Shape shape = new Circle();
+            Shape shape1 = new Rectangle();
+            Shape shape2 = new Triangle();
+            shape.Draw();
+            shape1.Draw();
+            shape2.Draw();
             Console.ReadLine();
         }
     }
